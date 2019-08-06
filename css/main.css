@@ -1,0 +1,376 @@
+body {
+    background: rgb(22, 22, 22);
+}
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form div, button, select {
+    margin-top: 20px;
+}
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(129, 129, 129);
+}
+.form__wrap {
+    width: 80%;
+    position: relative;
+}
+.form__wrap_checkbox {
+    display: flex;
+    align-items: center;
+}
+.form__wrap_checkbox span {
+    margin-left: 10px;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+.title {
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+svg {
+    position: absolute;
+    top: 27%;
+    left: 1.5%;
+    width: 15px;
+    height: 15px;
+}
+.select {
+    padding-left: 3%;
+    width: 80%;
+    height: 30px;
+}
+button {
+    width: 90px;
+    height: 30px;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+.main {
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-column-gap: 3%;
+    grid-row-gap: 30px;
+}
+.main__item {
+    background: #fff;
+}
+.main__partners_wrap_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main__sort_wrap {
+    color: #fff;
+    font-size: 20px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__sort_button {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.main__partners_wrap_title {
+    background: rgb(172, 172, 172);
+}
+.main__title {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(172, 172, 172);
+}
+.main__content_scroll {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    overflow: auto !important;
+    height: 160px;
+}
+.main__content_scroll div {
+    padding: 7px 0px 7px 7px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.author, .date {
+    width: 28%;
+}
+.main__companies {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.main__content_center {
+    display: flex;
+    margin-top: 28px;
+    justify-content: center;
+}
+.main__content {
+    overflow: hidden;
+}
+/* loader */
+.lds-spinner {
+    
+    left: 45%;
+    margin-top: 68px;
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-spinner div {
+    transform-origin: 32px 32px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    background: #000;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+.notActive {
+    display: none !important;
+}
+.activee {
+    display: block !important;
+}
+/* slider */
+
+
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 28px;
+    height: 178px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.item {
+    display: flex;
+    overflow: hidden;
+}
+.item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    width: 67%;
+    position: absolute;
+    color: #fff;
+    font-size: 16px;
+    left: 29%;
+    top: -2%;
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.wrap-img {
+    width: 28%;
+    height: 120px;
+}
+
+.main__wrap-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__block {
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.main__company_name {
+    border: 2px solid;
+    transform: rotate(-90deg);
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+}
+.main__company_percent {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.main__item_grid {
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+@media screen and (max-width: 900px) {
+    .main {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+}
